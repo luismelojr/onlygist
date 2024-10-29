@@ -24,4 +24,7 @@ export default defineNuxtConfig({
       Inter: [300, 500, 800],
     },
   },
+  imports: {
+    dirs: ['./composables/useMarkdown'],
+  },
 });

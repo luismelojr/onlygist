@@ -3,6 +3,7 @@ import PublicHeadline from '@/modules/users/components/PublicHeadline/PublicHead
 import WidgetGroup from '@/modules/reports/components/Widget/Group/Group.vue';
 import WidgetLoader from '@/modules/reports/components/Widget/Group/Loader.vue';
 import WidgetCondensed from '@/modules/reports/components/Widget/Condensed/Condensed.vue';
+import GistCardGroup from '@/modules/gists/components/Card/Group/Group.vue';
 
 const loading = ref(true);
 
@@ -29,5 +30,7 @@ onMounted(() => {
     </WidgetLoader>
   </WidgetGroup>
 
-  <WidgetDefault title="Todos os gists">gists</WidgetDefault>
+  <WidgetDefault title="Todos os gists">
+    <GistCardGroup>aaa</GistCardGroup>
+  </WidgetDefault>
 </template>
